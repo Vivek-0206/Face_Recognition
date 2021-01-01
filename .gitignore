@@ -1,0 +1,4 @@
+__pycache__/
+people/
+group_of_faces/
+model.h5
