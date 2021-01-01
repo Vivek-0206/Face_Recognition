@@ -45,7 +45,7 @@ def findCosineSimilarity(source_representation, test_representation):
 
 
 # Load Detector
-def laod_detector():
+def load_detector():
     prototxt = "Model/deploy.prototxt"
     caff_model = "Model/res10_300x300_ssd_iter_140000.caffemodel"
     detector = cv2.dnn.readNetFromCaffe(prototxt, caff_model)
@@ -64,7 +64,7 @@ def detect_face(img):
     aspect_ratio_x = original_size[1] / target_size[1]
     aspect_ratio_y = original_size[0] / target_size[0]
     imageBlob = cv2.dnn.blobFromImage(image=img)
-    detector = laod_detector()
+    detector = load_detector()
     detector.setInput(imageBlob)
     detections = detector.forward()
 
