@@ -40,13 +40,13 @@ def findCosineSimilarity(source_representation, test_representation):
 
 
 # Predict using Webcam
-def predict_persion(model):
+def predict_person(model):
     """Predict on webcam and return name of detected person if it's already known """
     import os
     import cv2
     import tensorflow as tf
     import numpy as np
-    
+
     found = 0
     final_name = ""
 
