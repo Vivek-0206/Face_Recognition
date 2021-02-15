@@ -72,7 +72,7 @@ def detect_face(img):
 
 
 # Predict Using Webcam
-def predict_persion(model):
+def predict_person(model):
     """Predict on webcam and return name of detected person if it's already known """
 
     found = 0
